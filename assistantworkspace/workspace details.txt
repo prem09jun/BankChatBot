@@ -1,0 +1,15 @@
+Skill Details
+Skill Name:Banking_Simple_DO_NOT_DELETE
+
+Skill ID:f3f9ad9f-ee37-4490-9d80-d71eeea20093
+
+Workspace ID:f3f9ad9f-ee37-4490-9d80-d71eeea20093
+
+Legacy v1 Workspace URL:https://gateway.watsonplatform.net/conversation/api/v1/workspaces/f3f9ad9f-ee37-4490-9d80-d71eeea20093/message
+
+Service Credentials
+Service Credentials Name:conversation_tooling_key1488222586771
+
+Username:d3574667-bbb3-48aa-b1cc-5e32973bac1f
+
+Password:BcvVAEGUL0Zw
