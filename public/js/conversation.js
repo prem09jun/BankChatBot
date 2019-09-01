@@ -147,6 +147,12 @@ var ConversationPanel = (function () {
       var res = responses[index];
       if (res.type !== 'pause') {
         var currentDiv = getDivObject(res, isUser, isTop);
+		if(!isUser){
+			var textMsg = currentDiv.innerText;
+			var speech = new SpeechSynthesisUtterance(textMsg);
+			speech.lang = 'en-US';
+			window.speechSynthesis.speak(speech);
+		}
         chatBoxElement.appendChild(currentDiv);
         // Class to start fade in animation
         currentDiv.classList.add('load');
@@ -314,10 +320,6 @@ var ConversationPanel = (function () {
   // Scroll to the bottom of the chat window
   function scrollToChatBottom() {
     var scrollingChat = document.querySelector('#scrollingChat');
-	var textMsg = scrollingChat.innerText;
-	var speech = new SpeechSynthesisUtterance(textMsg);
-	speech.lang = 'en-US';
-	window.speechSynthesis.speak(speech);
     scrollingChat.scrollTop = scrollingChat.scrollHeight;
   }
 
